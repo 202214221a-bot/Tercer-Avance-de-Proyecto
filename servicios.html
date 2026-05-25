@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Pearl Smile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="logo">
+            <header>
+                <img src="imagen/logo.png" alt="Logo Pearl Smile" class="logo">
+            </header>
+        </div>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="servicios.html" class="activo">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios" class="servicios">
+
+        <h2>Nuestros Servicios</h2>
+
+        <p class="texto-servicios">
+            Contamos con tratamientos dentales modernos y especialistas
+            altamente capacitados para cuidar tu sonrisa.
+        </p>
+
+        <div class="servicios-contenedor" id="contenedor-servicios">
+
+            <!-- SERVICIO 1 -->
+            <div class="servicio-card" data-servicio="limpieza">
+                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1000&auto=format&fit=crop"
+                alt="Limpieza Dental">
+                <h3>Limpieza Dental</h3>
+                <p>Eliminación de sarro, placa bacteriana y prevención de enfermedades bucales.</p>
+                <button class="btn-info" data-titulo="Limpieza Dental"
+                data-descripcion="La limpieza dental profesional elimina el sarro y la placa bacteriana que el cepillado diario no puede alcanzar. Recomendamos realizarla cada 6 meses para mantener una salud bucal óptima.">
+                    Más Información
+                </button>
+            </div>
+
+            <!-- SERVICIO 2 -->
+            <div class="servicio-card" data-servicio="ortodoncia">
+                <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1000&auto=format&fit=crop"
+                alt="Ortodoncia">
+                <h3>Ortodoncia</h3>
+                <p>Corrección dental mediante brackets modernos y alineadores estéticos.</p>
+                <button class="btn-info" data-titulo="Ortodoncia"
+                data-descripcion="Corregimos la posición de tus dientes con brackets metálicos, cerámicos o alineadores invisibles (Invisalign). Tratamientos para niños, adolescentes y adultos con resultados duraderos.">
+                    Más Información
+                </button>
+            </div>
+
+            <!-- SERVICIO 3 -->
+            <div class="servicio-card" data-servicio="blanqueamiento">
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1000&auto=format&fit=crop"
+                alt="Blanqueamiento">
+                <h3>Blanqueamiento</h3>
+                <p>Tratamientos profesionales para lograr una sonrisa brillante y saludable.</p>
+                <button class="btn-info" data-titulo="Blanqueamiento Dental"
+                data-descripcion="Utilizamos tecnología LED de última generación para aclarar el color de tus dientes hasta 8 tonos en una sola sesión. Procedimiento seguro, rápido y sin dañar el esmalte.">
+                    Más Información
+                </button>
+            </div>
+
+            <!-- SERVICIO 4 -->
+            <div class="servicio-card" data-servicio="implantes">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1000&auto=format&fit=crop"
+                alt="Implantes Dentales">
+                <h3>Implantes Dentales</h3>
+                <p>Recupera tu sonrisa con implantes de titanio de alta calidad y larga duración.</p>
+                <button class="btn-info" data-titulo="Implantes Dentales"
+                data-descripcion="Los implantes dentales son la solución más permanente para reemplazar dientes perdidos. Fabricados en titanio biocompatible, se integran naturalmente al hueso y tienen una duración de toda la vida.">
+                    Más Información
+                </button>
+            </div>
+
+            <!-- SERVICIO 5 -->
+            <div class="servicio-card" data-servicio="pediatrica">
+                <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=1000&auto=format&fit=crop"
+                alt="Odontología Pediátrica">
+                <h3>Odontología Pediátrica</h3>
+                <p>Atención especializada para niños en un ambiente amigable y seguro.</p>
+                <button class="btn-info" data-titulo="Odontología Pediátrica"
+                data-descripcion="Nuestros especialistas pediátricos cuidan la salud bucal de los más pequeños desde su primer diente. Utilizamos técnicas especiales para que los niños pierdan el miedo al dentista.">
+                    Más Información
+                </button>
+            </div>
+
+            <!-- SERVICIO 6 -->
+            <div class="servicio-card" data-servicio="estetica">
+                <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=1000&auto=format&fit=crop"
+                alt="Estética Dental">
+                <h3>Estética Dental</h3>
+                <p>Carillas, diseño de sonrisa y tratamientos para una apariencia perfecta.</p>
+                <button class="btn-info" data-titulo="Estética Dental"
+                data-descripcion="Transformamos tu sonrisa con carillas de porcelana, diseño digital de sonrisa y coronas estéticas. Cada tratamiento es personalizado para lograr resultados naturales y armoniosos.">
+                    Más Información
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MODAL DE INFORMACIÓN -->
+    <div id="modal-servicio" class="modal oculto">
+        <div class="modal-contenido">
+            <button id="cerrar-modal" class="cerrar-modal">✕</button>
+            <h3 id="modal-titulo"></h3>
+            <p id="modal-descripcion"></p>
+            <a href="contacto.html" class="btn-modal">Solicitar cita</a>
+        </div>
+    </div>
+    <div id="overlay-modal" class="overlay oculto"></div>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a 
+    href="https://wa.me/51973906230?text=Hola,%20deseo%20más%20información%20sobre%20sus%20servicios%20"
+    class="whatsapp"
+    target="_blank"
+    title="Escríbenos por WhatsApp somos Clinica Pearl Smile">
+    <img 
+      src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
+      alt="WhatsApp">
+  </a>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 Clínica Dental Pearl Smile | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="javascrip.js"></script>
+</body>
+</html>

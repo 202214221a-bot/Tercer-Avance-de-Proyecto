@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Pearl Smile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="logo">
+            <header>
+                <img src="imagen/logo.png" alt="Logo Pearl Smile" class="logo">
+            </header>
+        </div>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html" class="activo">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contacto">
+
+        <h2>Contáctanos</h2>
+
+        <center><p class="texto-contacto">
+            Estamos listos para ayudarte a cuidar tu sonrisa.
+            Puedes comunicarte con nosotros mediante los siguientes medios.
+        </p></center>
+
+        <div class="contacto-contenedor">
+
+            <div class="contacto-card">
+                <h3>📍 Dirección</h3>
+                <p>Av. Principal 123 <br> Cusco - Perú</p>
+            </div>
+
+            <div class="contacto-card">
+                <h3>📞 Teléfono</h3>
+                <p>+51 973 906 230</p>
+            </div>
+
+            <div class="contacto-card">
+                <h3>✉️ Correo</h3>
+                <p>pearlsmile@gmail.com</p>
+            </div>
+
+        </div>
+
+        <!-- FORMULARIO -->
+        <form class="formulario-contacto" id="formulario-contacto">
+
+            <input type="text" id="input-nombre" placeholder="Ingrese su nombre" required>
+            <span class="error-msg" id="error-nombre"></span>
+
+            <input type="email" id="input-correo" placeholder="Ingrese su correo" required>
+            <span class="error-msg" id="error-correo"></span>
+
+            <textarea id="input-mensaje" placeholder="Escriba su mensaje"></textarea>
+            <span class="error-msg" id="error-mensaje"></span>
+
+            <button type="submit" id="btn-enviar">Enviar Mensaje</button>
+
+        </form>
+
+        <!-- MENSAJE DE ÉXITO -->
+        <div id="mensaje-exito" class="mensaje-exito oculto">
+            ✅ ¡Mensaje enviado correctamente! Te contactaremos pronto.
+        </div>
+
+    </section>
+    
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a 
+    href="https://wa.me/51973906230?text=Hola,%20deseo%20más%20información%20sobre%20sus%20servicios%20"
+    class="whatsapp"
+    target="_blank"
+    title="Escríbenos por WhatsApp somos Clinica Pearl Smile">
+    <img 
+      src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
+      alt="WhatsApp">
+  </a>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 Clínica Dental Pearl Smile | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="javascrip.js"></script>
+</body>
+</html>
